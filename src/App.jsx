@@ -1,14 +1,18 @@
 import "./scss/main.scss";
-import "./components/Navbar";
-import "./components/Footer";
-import "./components/Content";
-
-
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Content from  "./components/Content";
+import { BrowserRouter as Router, } from 'react-router-dom';
 
 function App() {
   return (
     <>
-       <h1>React</h1>
+       <Router>
+          <Navbar />
+          <Content />
+          <Footer />
+       </Router>
+        
     </>
   )
 }
